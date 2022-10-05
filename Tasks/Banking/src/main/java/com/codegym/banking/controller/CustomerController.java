@@ -1,2 +1,15 @@
-package com.codegym.banking.controller;public class CustomerController {
+package com.codegym.banking.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/creates")
+public class CustomerController {
+
+    @GetMapping("/create")
+    public String create(){
+        return "/create";
+    }
 }
